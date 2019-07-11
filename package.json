@@ -1,0 +1,31 @@
+{
+  "name": "micoservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/controller.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "mocha  dist/test/calculate.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.1.7",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^6.1.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "@types/mocha": "^5.2.7"
+  }
+}
