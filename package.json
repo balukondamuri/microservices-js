@@ -10,7 +10,7 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node .",
-    "test": "mocha dist/test/calculate.spec.js"
+    "test": "mocha dist/test/integration/*.spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +26,7 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.6.2",
     "mochawesome": "^4.0.1",
+    "request": "^2.88.0",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
   }
