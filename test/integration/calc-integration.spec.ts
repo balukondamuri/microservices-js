@@ -22,7 +22,8 @@ describe("Integration test suite", function(){
                headers: {'content-type': 'application/json'}
                },function(error:any, response:any,body:any){
                    let resu= JSON.parse(body);
-                expect(resu.stauts).to.equal(6, `expected 6 but the body contain ${body}`);
+                   console.log(resu.result);
+                expect(resu.result).to.equal(6, `expected 6 but the body contain ${body}`);
                });
         });
     });
